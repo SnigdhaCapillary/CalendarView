@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, useEffect} from 'react'
 // import {PropTypes} from 'prop-types' 
 import Scheduler, {SchedulerData, ViewTypes, DATE_FORMAT} from 'react-big-scheduler'
 import withDragDropContext from './withDnDContext'
@@ -16,6 +16,8 @@ class App extends Component{
         moment.locale('zh-cn');
         schedulerData.setLocaleMoment(moment);
         // schedulerData.localeMoment.locale('en');
+
+        
 
         let resources = [
           {
@@ -136,18 +138,49 @@ class App extends Component{
         }
         //  console.log("scheduler config value",schedulerData.config.nonAgendaOtherCellHeaderFormat) ;
          schedulerData.config.nonAgendaOtherCellHeaderFormat = 'D'
-         schedulerData.config.quarterCellWidth = 20
-         schedulerData.config.quarterResourceTableWidth = 0
+         schedulerData.config.quarterCellWidth = 15
+         schedulerData.config.quarterResourceTableWidth = -10
          schedulerData.config.resourceName = ''
-         schedulerData.config.schedulerWidth= '80%'
+         schedulerData.config.schedulerWidth= '81%'
          schedulerData.config.nonWorkingTimeHeadBgColor= ''
          schedulerData.config.nonWorkingTimeBodyBgColor= ''
+
+         schedulerData.config.views= []
            
     }
 
+    componentDidMount() {
+
+        let showIndex = -1;
+        let showTdIndex = -1;
+       document.querySelectorAll("table.scheduler-bg-table th").forEach((item, index) =>{
+       item.style.visibility ="hidden";
+       if(item.style.color === "rgb(153, 153, 153)"){
+         showIndex = index+1;
+       }else if(index === showIndex){
+        item.style.visibility ="unset";
+       }
+    })
+
+    // document.querySelectorAll("table.scheduler-table").forEach((item, index) =>{
+    //     console.log("in query");
+    //     item.style.visibility ="hidden";
+    //     if(item.style.color === "rgb(153, 153, 153)"){
+    //         showTdIndex = index+1;
+    //     }else if(index === showTdIndex){
+    //      item.style.borderRight= "1px solid red";
+    //     }
+    //  }
+    //  )
+    
+};
+
+
     render(){
+        
         const schedulerData = this.state.viewModel;
         return (
+            
                 <div>
                     {/* <h3 style={{textAlign: 'center'}}>App example<ViewSrcCode srcCodeUrl="https://github.com/StephenChou1017/react-big-scheduler/blob/master/example/App.js" /></h3> */}
                     <Scheduler schedulerData={schedulerData}
@@ -155,15 +188,15 @@ class App extends Component{
                                nextClick={this.nextClick}
                                onSelectDate={this.onSelectDate}
                                onViewChange={this.onViewChange}
-                               eventItemClick={this.eventClicked}
-                               viewEventClick={this.ops1}
-                               viewEventText="Ops 1"
-                               viewEvent2Text="Ops 2"
-                               viewEvent2Click={this.ops2}
-                               updateEventStart={this.updateEventStart}
-                               updateEventEnd={this.updateEventEnd}
-                               moveEvent={this.moveEvent}
-                               newEvent={this.newEvent}
+                            //    eventItemClick={this.eventClicked}
+                            //    viewEventClick={this.ops1}
+                            //    viewEventText="Ops 1"
+                            //    viewEvent2Text="Ops 2"
+                            //    viewEvent2Click={this.ops2}
+                              // updateEventStart={this.updateEventStart}
+                                //  updateEventEnd={this.updateEventEnd}
+                            //    moveEvent={this.moveEvent}
+                            //    newEvent={this.newEvent}
                                onScrollLeft={this.onScrollLeft}
                                onScrollRight={this.onScrollRight}
                                onScrollTop={this.onScrollTop}
@@ -172,8 +205,10 @@ class App extends Component{
                     />
                 </div>
 
+
         )
     }
+
 
     
     prevClick = (schedulerData)=> {
@@ -209,68 +244,68 @@ class App extends Component{
         })
     }
 
-    eventClicked = (schedulerData, event) => {
-        alert(`You just clicked an event: {id: ${event.id}, title: ${event.title}}`);
-    };
+    // eventClicked = (schedulerData, event) => {
+    //     alert(`You just clicked an event: {id: ${event.id}, title: ${event.title}}`);
+    // };
 
-    ops1 = (schedulerData, event) => {
-        alert(`You just executed ops1 to event: {id: ${event.id}, title: ${event.title}}`);
-    };
+    // ops1 = (schedulerData, event) => {
+    //     alert(`You just executed ops1 to event: {id: ${event.id}, title: ${event.title}}`);
+    // };
 
-    ops2 = (schedulerData, event) => {
-        alert(`You just executed ops2 to event: {id: ${event.id}, title: ${event.title}}`);
-    };
+    // ops2 = (schedulerData, event) => {
+    //     alert(`You just executed ops2 to event: {id: ${event.id}, title: ${event.title}}`);
+    // };
 
-    newEvent = (schedulerData, slotId, slotName, start, end, type, item) => {
-        if(window.confirm(`Do you want to create a new event? {slotId: ${slotId}, slotName: ${slotName}, start: ${start}, end: ${end}, type: ${type}, item: ${item}}`)){
+    // newEvent = (schedulerData, slotId, slotName, start, end, type, item) => {
+    //     if(window.confirm(`Do you want to create a new event? {slotId: ${slotId}, slotName: ${slotName}, start: ${start}, end: ${end}, type: ${type}, item: ${item}}`)){
 
-            let newFreshId = 0;
-            schedulerData.events.forEach((item) => {
-                if(item.id >= newFreshId)
-                    newFreshId = item.id + 1;
-            });
+    //         let newFreshId = 0;
+    //         schedulerData.events.forEach((item) => {
+    //             if(item.id >= newFreshId)
+    //                 newFreshId = item.id + 1;
+    //         });
 
-            let newEvent = {
-                id: newFreshId,
-                title: 'New event you just created',
-                start: start,
-                end: end,
-                resourceId: slotId,
-                bgColor: 'purple'
-            }
-            schedulerData.addEvent(newEvent);
-            this.setState({
-                viewModel: schedulerData
-            })
-        }
-    }
+    //         let newEvent = {
+    //             id: newFreshId,
+    //             title: 'New event you just created',
+    //             start: start,
+    //             end: end,
+    //             resourceId: slotId,
+    //             bgColor: 'purple'
+    //         }
+    //         schedulerData.addEvent(newEvent);
+    //         this.setState({
+    //             viewModel: schedulerData
+    //         })
+    //     }
+    // }
 
-    updateEventStart = (schedulerData, event, newStart) => {
-        if(window.confirm(`Do you want to adjust the start of the event? {eventId: ${event.id}, eventTitle: ${event.title}, newStart: ${newStart}}`)) {
-            schedulerData.updateEventStart(event, newStart);
-        }
-        this.setState({
-            viewModel: schedulerData
-        })
-    }
+    // updateEventStart = (schedulerData, event, newStart) => {
+    //     if(window.confirm(`Do you want to adjust the start of the event? {eventId: ${event.id}, eventTitle: ${event.title}, newStart: ${newStart}}`)) {
+    //         schedulerData.updateEventStart(event, newStart);
+    //     }
+    //     this.setState({
+    //         viewModel: schedulerData
+    //     })
+    // }
 
-    updateEventEnd = (schedulerData, event, newEnd) => {
-        if(window.confirm(`Do you want to adjust the end of the event? {eventId: ${event.id}, eventTitle: ${event.title}, newEnd: ${newEnd}}`)) {
-            schedulerData.updateEventEnd(event, newEnd);
-        }
-        this.setState({
-            viewModel: schedulerData
-        })
-    }
+    // updateEventEnd = (schedulerData, event, newEnd) => {
+    //     if(window.confirm(`Do you want to adjust the end of the event? {eventId: ${event.id}, eventTitle: ${event.title}, newEnd: ${newEnd}}`)) {
+    //         schedulerData.updateEventEnd(event, newEnd);
+    //     }
+    //     this.setState({
+    //         viewModel: schedulerData
+    //     })
+  //  }
 
-    moveEvent = (schedulerData, event, slotId, slotName, start, end) => {
-        if(window.confirm(`Do you want to move the event? {eventId: ${event.id}, eventTitle: ${event.title}, newSlotId: ${slotId}, newSlotName: ${slotName}, newStart: ${start}, newEnd: ${end}`)) {
-            schedulerData.moveEvent(event, slotId, slotName, start, end);
-            this.setState({
-                viewModel: schedulerData
-            })
-        }
-    }
+    // moveEvent = (schedulerData, event, slotId, slotName, start, end) => {
+    //     if(window.confirm(`Do you want to move the event? {eventId: ${event.id}, eventTitle: ${event.title}, newSlotId: ${slotId}, newSlotName: ${slotName}, newStart: ${start}, newEnd: ${end}`)) {
+    //         schedulerData.moveEvent(event, slotId, slotName, start, end);
+    //         this.setState({
+    //             viewModel: schedulerData
+    //         })
+    //     }
+    // }
 
     onScrollRight = (schedulerData, schedulerContent, maxScrollLeft) => {
         if(schedulerData.ViewTypes === ViewTypes.Day) {
