@@ -4,7 +4,6 @@ import withDragDropContext from './withDnDContext';
 import 'react-big-scheduler/lib/css/style.css';
 import moment from 'moment';
 import './Style.css';
-import TodayMarker from './TodayMarker';
 
 let resources = [
   {
@@ -186,15 +185,28 @@ class App extends Component {
             }else if(index === showBar){
                item.style.borderLeft  ="thin dotted grey";
             //    item.style.height ="100%";
-    
-           }
+          }
         });
     }
 
+    plotVerticalsToday(){
+      const todayIndex = (this.state.viewModel.headers || [])
+        .findIndex(item => 
+          moment(item.time).format('DD/MM/YYYY') === moment().format('DD/MM/YYYY')
+        );
+      let cursor = todayIndex;
+      document.querySelectorAll("table.scheduler-bg-table td").forEach((item, index) =>{
+          if(todayIndex !== -1 && index === cursor) {
+            item.style.borderLeft ="2px solid red";
+            cursor += (this.state.viewModel.headers || []).length;
+          }
+      });
+    }
 
   componentDidMount() {
     this.hideWeekDays();
     this.dottedDateVline();
+    this.plotVerticalsToday();
   };
 
   prevClick = (schedulerData)=> {
@@ -202,8 +214,9 @@ class App extends Component {
     schedulerData.setEvents(events);
     this.setState({
         viewModel: schedulerData
-    }, () => {this.hideWeekDays()
-              this.dottedDateVline()
+    }, () => {this.hideWeekDays();
+              this.dottedDateVline();
+              this.plotVerticalsToday();
             });
     
   }
@@ -212,35 +225,14 @@ class App extends Component {
     schedulerData.next();
     schedulerData.setEvents(events);
     this.setState({
-        viewModel: schedulerData
-      }, () => {this.hideWeekDays()
-                this.dottedDateVline()
-            });
+      viewModel: schedulerData
+    }, () => {
+      this.hideWeekDays();
+      this.dottedDateVline();
+      this.plotVerticalsToday();
+    });
   }
 
-  onScrollRight = (schedulerData, schedulerContent, maxScrollLeft) => {
-    if(schedulerData.ViewTypes === ViewTypes.Day) {
-      schedulerData.next();
-      schedulerData.setEvents(schedulerData.events);
-      this.setState({
-          viewModel: schedulerData
-      });
-
-      schedulerContent.scrollLeft = maxScrollLeft - 10;
-    }
-  }
-
-  onScrollLeft = (schedulerData, schedulerContent, maxScrollLeft) => {
-    if(schedulerData.ViewTypes === ViewTypes.Day) {
-      schedulerData.prev();
-      schedulerData.setEvents(schedulerData.events);
-      this.setState({
-          viewModel: schedulerData
-      });
-
-      schedulerContent.scrollLeft = 10;
-    }
-  }
   render(){
     const schedulerData = this.state.viewModel;
     return (
@@ -250,9 +242,6 @@ class App extends Component {
           nextClick={this.nextClick}
           showAgenda={false}
         />
-{/* 
-      <TodayMarker>
-        </TodayMarker> */}
       </div>
     );
   };
