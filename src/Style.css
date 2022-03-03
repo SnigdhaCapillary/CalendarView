@@ -48,4 +48,28 @@ table.scheduler-content-table {
     border: none;
     margin: 0 0 0 -1px;
     padding: 0;
+    /* border-bottom: none!important; */
 }
+
+.scheduler-view > div:first-child {
+    border-bottom: none!important;
+}
+.header2-text { margin-left: 80px;}
+.header2-text > span { float: right; margin-left: 20px;} 
+.header2-text > i{ float: left; }
+
+/* .header2-text > :first-child{ color: red; }
+.header2-text > span { color: green;  }
+.header2-text > i{ color: purple;  } */
+
+.scheduler {
+    margin: 60px auto;
+    border-spacing: 0;
+}
+
+.monthsRow{
+    width: 480px;
+
+}
+
+
