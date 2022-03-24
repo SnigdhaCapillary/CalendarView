@@ -7,7 +7,7 @@ table.scheduler-table th,
 table.resource-table td, 
 table.scheduler-bg-table td, 
 table.scheduler-table td{
-    border-right: 1px solid white;
+    border-right: 1.2px dotted grey;
     border-bottom: none;
 }
 
@@ -20,3 +20,89 @@ table.scheduler-table tr {
 table.scheduler-bg-table th {
     border-right: none
 }
+
+table.scheduler-content-table {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-spacing: 0;
+}
+
+.event-item {
+    margin: 1px 0;
+    width: '100%';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #091e42;
+    padding-right: 20px !important;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    
+}
+.round-all {
+    border-radius: 4px;
+}
+
+.scheduler-view {
+    border: none;
+    margin: 0 0 0 -1px;
+    padding: 0;
+    /* border-bottom: none!important; */
+}
+
+.scheduler-view > div:first-child {
+    border-bottom: none!important;
+}
+.header2-text { margin-left: 80px;}
+.header2-text > span { float: right; margin-left: 20px; font-size: 16px;} 
+.header2-text > i{ float: left; }
+
+/* .header2-text > :first-child{ color: red; }
+.header2-text > span { color: green;  }
+.header2-text > i{ color: purple;  } */
+
+.scheduler {
+    margin: 40px auto;
+    border-spacing: 0;
+}
+
+.month-view{
+    width: 25%;
+    position: relative;
+    top: 40px;
+    left:250px;
+    float:left;
+    /* box-sizing:border-box; */
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: #091e42;
+}
+
+.tool-tip{
+    /* display: none; */
+    position:absolute; 
+    width: 52px;
+    height: 26px;
+    background-color:black;
+    padding-top: 4px;
+    color:white; 
+    font-size: 12px;
+    text-align: center;
+    /* transition: 0.7s; */
+  }
+
+  .tool-tip:hover .tooltip-text {
+    visibility: visible;
+  }
+
+  .down {
+    width: 72px;
+    height: 36px;
+    margin: 26px 390px 500px 169px;
+    padding: 6px 16px 9px;
+  }
+
+
+  
