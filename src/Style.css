@@ -41,7 +41,7 @@ table.scheduler-content-table {
     
 }
 .round-all {
-    border-radius: 0px;
+    border-radius: 4px;
 }
 
 .scheduler-view {
@@ -55,7 +55,7 @@ table.scheduler-content-table {
     border-bottom: none!important;
 }
 .header2-text { margin-left: 80px;}
-.header2-text > span { float: right; margin-left: 20px;} 
+.header2-text > span { float: right; margin-left: 20px; font-size: 16px;} 
 .header2-text > i{ float: left; }
 
 /* .header2-text > :first-child{ color: red; }
@@ -63,13 +63,46 @@ table.scheduler-content-table {
 .header2-text > i{ color: purple;  } */
 
 .scheduler {
-    margin: 60px auto;
+    margin: 40px auto;
     border-spacing: 0;
 }
 
-.monthsRow{
-    width: 480px;
-
+.month-view{
+    width: 25%;
+    position: relative;
+    top: 40px;
+    left:250px;
+    float:left;
+    /* box-sizing:border-box; */
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: #091e42;
 }
 
+.tool-tip{
+    /* display: none; */
+    position:absolute; 
+    width: 52px;
+    height: 26px;
+    background-color:black;
+    padding-top: 4px;
+    color:white; 
+    font-size: 12px;
+    text-align: center;
+    /* transition: 0.7s; */
+  }
 
+  .tool-tip:hover .tooltip-text {
+    visibility: visible;
+  }
+
+  .down {
+    width: 72px;
+    height: 36px;
+    margin: 26px 390px 500px 169px;
+    padding: 6px 16px 9px;
+  }
+
+
+  
