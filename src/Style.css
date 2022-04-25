@@ -105,4 +105,14 @@ table.scheduler-content-table {
   }
 
 
+.test{
+    background-color: red; 
+    height: 24px;
+    margin: 24px 1px 12px 9px;
+    padding: 4px 180px 4px 12px;
+    border-radius: 4px;
+    margin-top: 30px;
+  }
+  
+
   

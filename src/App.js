@@ -194,24 +194,11 @@ let events = [
     },
 
     {
-        id: 12,
-        start: '2022-01-05 12:30:00',
-        end: '2022-02-18 23:30:00',
-        resourceId: 'r2',
-        title: 'BBBBBB promotion',
-        resizable: false,
-        bgColor: '#e9e9ea',
-        startResizable: false,
-        endResizable: false,
-        movable: false,
-    },
-
-    {
         id: 13,
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'CCCCCC promotion',
+        title: 'BBBBBB promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -224,7 +211,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'xxxxxxx promotion',
+        title: 'CCCCCC promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -237,7 +224,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'yyyyyyy promotion',
+        title: 'xxxxxxx promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -250,7 +237,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'zzzzzz promotion',
+        title: 'yyyyyyy promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -263,7 +250,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'AAAAA promotion',
+        title: 'zzzzzz promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -276,7 +263,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'BBBBBB promotion',
+        title: 'AAAAA promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -289,19 +276,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'CCCCCC promotion',
-        resizable: false,
-        bgColor: '#e9e9ea',
-        startResizable: false,
-        endResizable: false,
-        movable: false,
-    },
-    {
-        id: 20,
-        start: '2022-01-05 12:30:00',
-        end: '2022-02-18 23:30:00',
-        resourceId: 'r2',
-        title: 'xxxxxxx promotion',
+        title: 'BBBBBB promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -310,11 +285,23 @@ let events = [
     },
 
     {
+        id: 20,
+        start: '2022-01-05 12:30:00',
+        end: '2022-02-18 23:30:00',
+        resourceId: 'r2',
+        title: 'CCCCCC promotion',
+        resizable: false,
+        bgColor: '#e9e9ea',
+        startResizable: false,
+        endResizable: false,
+        movable: false,
+    },
+    {
         id: 21,
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'yyyyyyy promotion',
+        title: 'xxxxxxx promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -327,7 +314,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'zzzzzz promotion',
+        title: 'yyyyyyy promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -340,7 +327,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'AAAAA promotion',
+        title: 'zzzzzz promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -353,7 +340,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'BBBBBB promotion',
+        title: 'AAAAA promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -366,7 +353,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'CCCCCC promotion',
+        title: 'BBBBBB promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -379,7 +366,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'xxxxxxx promotion',
+        title: 'CCCCCC promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -392,7 +379,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'yyyyyyy promotion',
+        title: 'xxxxxxx promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -405,7 +392,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'zzzzzz promotion',
+        title: 'yyyyyyy promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -418,7 +405,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'AAAAA promotion',
+        title: 'zzzzzz promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -431,7 +418,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'BBBBBB promotion',
+        title: 'AAAAA promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -444,7 +431,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'CCCCCC promotion',
+        title: 'BBBBBB promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -457,7 +444,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'xxxxxxx promotion',
+        title: 'CCCCCC promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -470,7 +457,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'yyyyyyy promotion',
+        title: 'xxxxxxx promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -483,7 +470,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'zzzzzz promotion',
+        title: 'yyyyyyy promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -496,7 +483,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'AAAAA promotion',
+        title: 'zzzzzz promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -509,7 +496,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'BBBBBB promotion',
+        title: 'AAAAA promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -522,7 +509,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'CCCCCC promotion',
+        title: 'BBBBBB promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -535,7 +522,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'xxxxxxx promotion',
+        title: 'CCCCCC promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -548,7 +535,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'yyyyyyy promotion',
+        title: 'xxxxxxx promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -561,7 +548,7 @@ let events = [
         start: '2022-01-05 12:30:00',
         end: '2022-02-18 23:30:00',
         resourceId: 'r2',
-        title: 'zzzzzz promotion',
+        title: 'yyyyyyy promotion',
         resizable: false,
         bgColor: '#e9e9ea',
         startResizable: false,
@@ -571,6 +558,19 @@ let events = [
 
     {
         id: 41,
+        start: '2022-01-05 12:30:00',
+        end: '2022-02-18 23:30:00',
+        resourceId: 'r2',
+        title: 'zzzzzz promotion',
+        resizable: false,
+        bgColor: '#e9e9ea',
+        startResizable: false,
+        endResizable: false,
+        movable: false,
+    },
+
+    {
+        id: 42,
         start: '2022-01-05 12:30:00',
         end: '2022-05-18 23:30:00',
         resourceId: 'r2',
@@ -583,7 +583,7 @@ let events = [
     },
 
     {
-        id: 42,
+        id: 43,
         start: '2022-01-05 12:30:00',
         end: '2022-04-18 23:30:00',
         resourceId: 'r2',
@@ -596,7 +596,7 @@ let events = [
     },
 
     {
-        id: 43,
+        id: 44,
         start: '2022-01-05 12:30:00',
         end: '2022-04-18 23:30:00',
         resourceId: 'r2',
@@ -608,26 +608,39 @@ let events = [
         movable: false,
     },
 ];
+
+const quarterInfo = {
+    1: "(Jan Feb Mar)",
+    2: "(Apr May Jun)",
+    3: "(July Aug Sep)",
+    4: "(Oct Nov Dec)"
+}
 class App extends Component {
     constructor(props) {
         super(props);
 
-        let schedulerData = new SchedulerData(new moment().format(DATE_FORMAT), ViewTypes.Quarter);
-        this.state = {
-            viewModel: schedulerData
-        }
+        let schedulerData = new SchedulerData(new moment().format(DATE_FORMAT), ViewTypes.Quarter,
+        false,
+        false,
+        {
+            nonAgendaOtherCellHeaderFormat : 'D',
+            quarterCellWidth : 16,
+            quarterResourceTableWidth : 50,
+            resourceName : '',
+            schedulerWidth : '100%',
+            nonWorkingTimeHeadBgColor : '',
+            views : [],
+            schedulerMaxHeight : 700,
+            checkConflict: true
+        },{
+            getDateLabelFunc: this.getDateLabel
+        },moment);
         schedulerData.setLocaleMoment(moment);
         schedulerData.setResources(resources);
         schedulerData.setEvents(events);
-        schedulerData.config.nonAgendaOtherCellHeaderFormat = 'D'
-        schedulerData.config.quarterCellWidth = 16
-        schedulerData.config.quarterResourceTableWidth = -50
-        schedulerData.config.resourceName = ''
-        schedulerData.config.schedulerWidth = '90%'
-        schedulerData.config.nonWorkingTimeHeadBgColor = ''
-        schedulerData.config.views = []
-        schedulerData.schedulerMaxHeight = '100%'
-
+        this.state = {
+            viewModel: schedulerData
+        }
     }
 
 
@@ -667,7 +680,19 @@ class App extends Component {
                 moment(item.time).format('DD/MM/YYYY') === moment().format('DD/MM/YYYY')
             );
         let cursor = todayIndex;
+        console.log({todayIndex})
         document.querySelectorAll("table.scheduler-bg-table td").forEach((item, index) => {
+            console.log({item,index})
+            if(index === todayIndex) {
+                item.childNodes[0].style.height = '8px';
+                item.childNodes[0].style.width = '8px';
+                item.childNodes[0].style.borderRadius = '100%';
+                item.childNodes[0].style.border = "2px solid blue";
+                item.childNodes[0].style.backgroundColor = "blue";
+                item.childNodes[0].style.position = "relative";
+                item.childNodes[0].style.left= "-5px";
+                item.childNodes[0].style.top="-9px";
+            }
             if (todayIndex !== -1 && index === cursor) {
                 item.style.borderLeft = "2px solid blue";
                 item.style.zIndex = "5000";
@@ -677,32 +702,43 @@ class App extends Component {
 
     }
 
-    tooltipToday() {
-        const todayIndex = (this.state.viewModel.headers || []).findIndex(item =>
-            moment(item.time).format('DD/MM/YYYY') === moment().format('DD/MM/YYYY')
-        );
+    //tooltipToday() {
+        // const todayIndex = (this.state.viewModel.headers || []).findIndex(item =>
+        //     moment(item.time).format('DD/MM/YYYY') === moment().format('DD/MM/YYYY')
+        // );
 
-        document.querySelectorAll("table.scheduler-bg-table th").forEach((item, index) => {
+        // document.querySelectorAll("table.scheduler-bg-table th").forEach((item, index) => {
 
-            if (index === todayIndex) {
-                let dateChild = item.firstChild;
-                dateChild.innerHTML = " ";
-                dateChild.className = 'tool-tip';
+        //     if (index === todayIndex) {
+        //         let dateChild = item.firstChild;
+        //         dateChild.innerHTML = " ";
+        //         dateChild.className = 'tool-tip';
 
-                let dateSpan = document.createElement('span');
-                dateChild.appendChild(dateSpan);
-                dateSpan.innerHTML = "Today";
+        //         let dateSpan = document.createElement('span');
+        //         dateChild.appendChild(dateSpan);
+        //         dateSpan.innerHTML = "Today";
 
-                dateSpan.className = 'tooltip-text';
-                item.style.visibility = "revert";
+        //         dateSpan.className = 'tooltip-text';
+        //         item.style.visibility = "revert";
 
-            }
+        //     }
 
-        });
+        // });
+    //}
 
+  
 
+    getDateLabel = (schedulerData, viewType, startDate, endDate) => {
+        let start = schedulerData.localeMoment(startDate);
+        let dateLabel = start.format('YYYY');
 
+        if(viewType === ViewTypes.Quarter){
+            const string = quarterInfo[start.quarter()];
+            dateLabel = `${string} ${start.format('YYYY')}`;
+        }
+        return dateLabel;
     }
+
 
     monthlyVerticalLine() {
         let showLine = -1;
@@ -746,13 +782,47 @@ class App extends Component {
         });
     }
 
+    eventItemTemplateResolver = (schedulerData, event, bgColor, isStart, isEnd, mustAddCssClass, mustBeHeight, agendaMaxEventWidth) => {
+        let borderWidth = isStart ? '4' : '0';
+        let borderColor =  'rgba(0,139,236,1)', backgroundColor = '#80C5F6';
+        let titleText = schedulerData.behaviors.getEventTextFunc(schedulerData, event);
+        // if(!!event.type){
+        //     borderColor = event.type == 1 ? 'rgba(0,139,236,1)' : (event.type == 3 ? 'rgba(245,60,43,1)' : '#999');
+        //     backgroundColor = event.type == 1 ? '#80C5F6' : (event.type == 3 ? '#FA9E95' : '#D9D9D9');
+        // }
+        // mustBeHeight= 60
+        let divStyle = {
+            backgroundColor:bgColor, 
+            // height: `${mustBeHeight}px`,
+            // height :'60px',
+            // margin: '20px 1px 12px 9px',
+            padding: '10px 180px 10px 12px',
+            borderRadius: '4px'
+        };
+
+        let spanStyle={
+            fontFamily: 'Roboto',
+            fontSize: '12px',
+            fontWeight: 'normal',
+            fontStretch: 'normal',
+            fontStyle: 'normal',
+            letterSpacing: 'normal',
+            color: '#091e42',
+        }
+            
+        if(!!agendaMaxEventWidth)
+            divStyle = {...divStyle, maxWidth: agendaMaxEventWidth};
+
+        return <div key={event.id} className={mustAddCssClass} style={divStyle}>
+            <span style={spanStyle}>{titleText}</span>
+        </div>;
+    }
 
     componentDidMount() {
         this.hideWeekDays();
         this.mondayVerticalLine();
         this.plotVerticalsToday();
         this.monthlyVerticalLine();
-        this.tooltipToday();
 
     };
 
@@ -766,7 +836,6 @@ class App extends Component {
             this.mondayVerticalLine();
             this.plotVerticalsToday();
             this.monthlyVerticalLine();
-            this.tooltipToday();
         });
 
     }
@@ -781,7 +850,6 @@ class App extends Component {
             this.mondayVerticalLine();
             this.plotVerticalsToday();
             this.monthlyVerticalLine();
-            this.tooltipToday();
         });
     }
 
@@ -794,7 +862,7 @@ class App extends Component {
 
 
         return (
-            <div>
+            <div style={{ maxWidth:'100%'}}>
                 <div>
                     <div className='month-view'>{displayMonths[startMonth]}</div>
                     <div className='month-view'>{displayMonths[startMonth + 1]}</div>
@@ -803,7 +871,9 @@ class App extends Component {
                 <Scheduler schedulerData={schedulerData}
                     prevClick={this.prevClick}
                     nextClick={this.nextClick}
-                    showAgenda={false} />
+                    showAgenda={false} 
+                    eventItemTemplateResolver={this.eventItemTemplateResolver}
+                    />
             </div>
         );
     };
